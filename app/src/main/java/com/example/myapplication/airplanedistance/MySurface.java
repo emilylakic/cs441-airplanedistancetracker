@@ -10,6 +10,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
     public MySurface(Context context) {
         super(context);
+        surfaceHolder = getHolder();
     }
 
     @Override
@@ -26,4 +27,6 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
     public void surfaceDestroyed(SurfaceHolder holder) {
 
     }
+
+    //public void () { //this method will be invoked to draw a
 }

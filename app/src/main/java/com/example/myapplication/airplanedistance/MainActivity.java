@@ -7,16 +7,22 @@ import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.SurfaceView;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements View.OnTouchListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        //SurfaceView view = new SurfaceView(this);
-        //setContentView(view);
-        //view.getHolder().addCallback((SurfaceHolder.Callback) this);
         setContentView(R.layout.activity_main);
+        initControls();
     }
 
+    private void initControls() {
 
+    }
+
+//User finger touch surfaceview object
+    @Override
+    public boolean onTouch(View v, MotionEvent event) {
+        return false;
+    }
 }
