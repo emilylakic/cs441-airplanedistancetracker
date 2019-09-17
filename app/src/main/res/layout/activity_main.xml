@@ -49,6 +49,7 @@
                 android:layout_height="272dp"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/map" />
+
         </LinearLayout>
 
     </LinearLayout>
