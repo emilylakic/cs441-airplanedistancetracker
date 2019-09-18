@@ -43,9 +43,9 @@
         </LinearLayout>
 
         <LinearLayout
+            android:id="@+id/customViewLayout"
             android:layout_width="426dp"
             android:layout_height="201dp"
-            android:id="@+id/customViewLayout"
             android:orientation="vertical">
 
             <ImageView

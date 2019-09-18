@@ -3,11 +3,13 @@ package com.example.myapplication.airplanedistance;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
+import android.graphics.Paint;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.SurfaceView;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         initControls();
+        this.getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
         customSurfaceView = new MySurface(getApplicationContext());
         customSurfaceView.setOnTouchListener(this);
         canvasLayout.addView(customSurfaceView);
@@ -72,11 +75,24 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             float y = motionEvent.getY();
 
 
+            customSurfaceView.setCircleX(x);
+
+            customSurfaceView.setCircleY(y);
+
             if (drawLine) {
+                // Create and set a red paint to custom surfaceview.
+                Paint paint = new Paint();
+                paint.setColor(Color.RED);
+                customSurfaceView.setPaint(paint);
 
-
+                customSurfaceView.drawLine();
             } else {
+                // Create and set a green paint to custom surfaceview.
+                Paint paint = new Paint();
+                paint.setColor(Color.GREEN);
+                customSurfaceView.setPaint(paint);
 
+                customSurfaceView.drawRect();
             }
 
             // Tell android os the onTouch event has been processed.
