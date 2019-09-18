@@ -36,7 +36,6 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
     @Override
     public void surfaceDestroyed(SurfaceHolder holder) {
         paint = null;
-//whatever you use to create the line, like paint = null;
     }
 
     public void  drawLine() {
