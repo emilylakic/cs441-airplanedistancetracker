@@ -1,0 +1,188 @@
+commit f88f13e43d5d2ad5c2e2fd443b8660c280ef4b60
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Wed Sep 18 10:03:10 2019 -0400
+
+    Rebuild SurfaceView to be able to draw line
+
+ .../airplanedistance/MainActivity.java             | 20 ++++++-
+ .../myapplication/airplanedistance/MySurface.java  | 63 +++++++++++++++++++++-
+ app/src/main/res/layout/activity_main.xml          |  2 +-
+ 3 files changed, 81 insertions(+), 4 deletions(-)
+
+commit 95f052cde31141b25311b7dd04208629158a7919
+Merge: f27b638 3017646
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Tue Sep 17 17:42:05 2019 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit f27b6381c95d8e7688ea6a432457c8fdeb13be47
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Tue Sep 17 17:41:53 2019 -0400
+
+    Trying to get surface view to work
+
+ .../airplanedistance/MainActivity.java             | 70 ++++++++++++++++++++--
+ .../myapplication/airplanedistance/MySurface.java  | 15 +++--
+ app/src/main/res/layout/activity_main.xml          | 15 +++--
+ 3 files changed, 87 insertions(+), 13 deletions(-)
+
+commit 301764696f3dfb35f21be5f2c4666b85a4bebe38
+Author: Emily Lakic <elakic1@binghamton.edu>
+Date:   Tue Sep 17 14:07:48 2019 -0400
+
+    Create README.md
+
+ README.md | 2 ++
+ 1 file changed, 2 insertions(+)
+
+commit cda981382db44a4c92fed9ea235423d7c89d4cc4
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Tue Sep 17 14:07:16 2019 -0400
+
+    Different maps for button chosen
+
+ app/src/main/res/drawable/airplane.png    | Bin 0 -> 141811 bytes
+ app/src/main/res/drawable/nytofl.png      | Bin 0 -> 861065 bytes
+ app/src/main/res/drawable/nytola.png      | Bin 0 -> 861375 bytes
+ app/src/main/res/layout/activity_main.xml |   1 +
+ 4 files changed, 1 insertion(+)
+
+commit 6d4020e504a6cb3efb6e0b70fd74e05e59abbf31
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Tue Sep 17 11:44:12 2019 -0400
+
+    Added map
+
+ app/src/main/res/drawable/map.png         | Bin 0 -> 839530 bytes
+ app/src/main/res/layout/activity_main.xml |  16 +++++++++++++++-
+ 2 files changed, 15 insertions(+), 1 deletion(-)
+
+commit b8199bcb1a89a769f046a9124e430d7160f75093
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Tue Sep 17 11:29:30 2019 -0400
+
+    Worked with MySurface.java and added buttons for which flight to pick
+
+ .../airplanedistance/MainActivity.java             | 14 +++++++----
+ .../myapplication/airplanedistance/MySurface.java  |  3 +++
+ app/src/main/res/layout/activity_main.xml          | 28 ++++++++++++++--------
+ 3 files changed, 31 insertions(+), 14 deletions(-)
+
+commit 246284ed947efc39216f3cd0a87d844218b1a9ad
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Mon Sep 16 22:05:05 2019 -0400
+
+    Trying to fix linear layout
+
+ app/src/main/res/layout/activity_main.xml | 14 ++++++++++----
+ 1 file changed, 10 insertions(+), 4 deletions(-)
+
+commit eda73e469f75e924d727696407255987c14ab3e5
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Mon Sep 16 10:21:29 2019 -0400
+
+    Figuring out how to work with SurfaceView....
+
+ .../myapplication/airplanedistance/MainActivity.java  | 10 +++++++++-
+ .../myapplication/airplanedistance/MySurface.java     | 19 ++++++++++++++++++-
+ app/src/main/res/layout/activity_main.xml             |  7 +++++++
+ 3 files changed, 34 insertions(+), 2 deletions(-)
+
+commit 4fb544f81770925c585910403f25f4a659d078d7
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sun Sep 15 14:03:13 2019 -0400
+
+    Coloring finished
+
+ app/src/main/res/layout/activity_main.xml | 1 +
+ app/src/main/res/values/colors.xml        | 2 +-
+ 2 files changed, 2 insertions(+), 1 deletion(-)
+
+commit fe207ad63842dba038c13c8380989e5b630e2af4
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sun Sep 15 13:54:58 2019 -0400
+
+    No action bar
+
+ app/src/main/res/values/styles.xml | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+commit 1f20a1ce321ed8c300198a3074570156ea5e0e51
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sun Sep 15 13:49:49 2019 -0400
+
+    Created new image as header
+
+ app/src/main/AndroidManifest.xml          |  4 +++-
+ app/src/main/res/layout/activity_main.xml | 21 +++++++++++----------
+ app/src/main/res/values/styles.xml        |  5 +++++
+ 3 files changed, 19 insertions(+), 11 deletions(-)
+
+commit 20baeaa02c46cd21c029a61d741ce954b2435efe
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sun Sep 15 11:43:33 2019 -0400
+
+    Test
+
+ app/src/main/res/layout/activity_main.xml | 8 +++++++-
+ 1 file changed, 7 insertions(+), 1 deletion(-)
+
+commit 7459add06563c7bc9257079f1994d381f77eb2ac
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sun Sep 15 11:42:16 2019 -0400
+
+    Change color of app, added map
+
+ app/src/main/res/drawable/us.png          | Bin 0 -> 1812045 bytes
+ app/src/main/res/layout/activity_main.xml |  24 ++++++------------------
+ app/src/main/res/values/colors.xml        |   1 +
+ app/src/main/res/values/styles.xml        |   3 +--
+ 4 files changed, 8 insertions(+), 20 deletions(-)
+
+commit 1f3de4241fe8580f0de216bd46367f41450b14eb
+Author: Emily Lakic <emilylakic@Emilys-MacBook-Pro.local>
+Date:   Sun Sep 15 10:36:45 2019 -0400
+
+    Initial commit
+
+ .gitignore                                         |  14 ++
+ .idea/codeStyles/Project.xml                       | 116 ++++++++++++++
+ .idea/gradle.xml                                   |  16 ++
+ .idea/misc.xml                                     |   9 ++
+ .idea/runConfigurations.xml                        |  12 ++
+ .idea/vcs.xml                                      |   6 +
+ app/.gitignore                                     |   1 +
+ app/build.gradle                                   |  29 ++++
+ app/proguard-rules.pro                             |  21 +++
+ .../airplanedistance/ExampleInstrumentedTest.java  |  27 ++++
+ app/src/main/AndroidManifest.xml                   |  21 +++
+ .../airplanedistance/MainActivity.java             |  14 ++
+ .../myapplication/airplanedistance/MySurface.java  |  12 ++
+ .../res/drawable-v24/ic_launcher_foreground.xml    |  34 ++++
+ .../main/res/drawable/ic_launcher_background.xml   | 170 ++++++++++++++++++++
+ app/src/main/res/layout/activity_main.xml          |  27 ++++
+ app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml |   5 +
+ .../res/mipmap-anydpi-v26/ic_launcher_round.xml    |   5 +
+ app/src/main/res/mipmap-hdpi/ic_launcher.png       | Bin 0 -> 2963 bytes
+ app/src/main/res/mipmap-hdpi/ic_launcher_round.png | Bin 0 -> 4905 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher.png       | Bin 0 -> 2060 bytes
+ app/src/main/res/mipmap-mdpi/ic_launcher_round.png | Bin 0 -> 2783 bytes
+ app/src/main/res/mipmap-xhdpi/ic_launcher.png      | Bin 0 -> 4490 bytes
+ .../main/res/mipmap-xhdpi/ic_launcher_round.png    | Bin 0 -> 6895 bytes
+ app/src/main/res/mipmap-xxhdpi/ic_launcher.png     | Bin 0 -> 6387 bytes
+ .../main/res/mipmap-xxhdpi/ic_launcher_round.png   | Bin 0 -> 10413 bytes
+ app/src/main/res/mipmap-xxxhdpi/ic_launcher.png    | Bin 0 -> 9128 bytes
+ .../main/res/mipmap-xxxhdpi/ic_launcher_round.png  | Bin 0 -> 15132 bytes
+ app/src/main/res/values/colors.xml                 |   6 +
+ app/src/main/res/values/strings.xml                |   3 +
+ app/src/main/res/values/styles.xml                 |  11 ++
+ .../airplanedistance/ExampleUnitTest.java          |  17 ++
+ build.gradle                                       |  27 ++++
+ gradle.properties                                  |  20 +++
+ gradle/wrapper/gradle-wrapper.jar                  | Bin 0 -> 54329 bytes
+ gradle/wrapper/gradle-wrapper.properties           |   6 +
+ gradlew                                            | 172 +++++++++++++++++++++
+ gradlew.bat                                        |  84 ++++++++++
+ settings.gradle                                    |   2 +
+ 39 files changed, 887 insertions(+)
