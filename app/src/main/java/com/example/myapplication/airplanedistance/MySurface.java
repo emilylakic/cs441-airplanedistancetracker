@@ -1,6 +1,8 @@
 package com.example.myapplication.airplanedistance;
 
 import android.content.Context;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Paint;
@@ -42,12 +44,12 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         Canvas canvas = surfaceHolder.lockCanvas();
         Paint surfaceBackground = new Paint();
         // Set the surfaceview background color.
-        surfaceBackground.setColor(Color.BLACK);
+        //surfaceBackground.setColor(Color.WHITE);
         // Draw the surfaceview background color.
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
 
         // Draw the circle.
-        paint.setColor(Color.RED);
+        paint.setColor(Color.BLUE);
         canvas.drawCircle(circleX, circleY, 100, paint);
 
         canvas.drawCircle(50, 50, 200, paint);
@@ -63,7 +65,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
         Paint surfaceBackground = new Paint();
         // Set the surfaceview background color.
-        surfaceBackground.setColor(Color.BLUE);
+        surfaceBackground.setColor(Color.WHITE);
         // Draw the surfaceview background color.
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
 

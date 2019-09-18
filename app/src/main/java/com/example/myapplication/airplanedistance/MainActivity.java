@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.graphics.Paint;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.SurfaceHolder;
@@ -32,7 +33,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         customSurfaceView = new MySurface(getApplicationContext());
         customSurfaceView.setOnTouchListener(this);
         canvasLayout.addView(customSurfaceView);
-
         laButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -82,14 +82,14 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             if (drawLine) {
                 // Create and set a red paint to custom surfaceview.
                 Paint paint = new Paint();
-                paint.setColor(Color.RED);
+                paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
 
                 customSurfaceView.drawLine();
             } else {
                 // Create and set a green paint to custom surfaceview.
                 Paint paint = new Paint();
-                paint.setColor(Color.GREEN);
+                paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
 
                 customSurfaceView.drawRect();
