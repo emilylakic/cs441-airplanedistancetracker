@@ -15,12 +15,16 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
     private Paint paint = null;
     private float circleX = 0;
     private float circleY = 0;
+    private Bitmap bmp;
+    private Bitmap resizedBitmap;
 
     public MySurface(Context context) {
         super(context);
         surfaceHolder = getHolder();
         paint = new Paint();
         paint.setColor(Color.RED);
+        bmp = BitmapFactory.decodeResource(getResources(), R.drawable.nytofl);
+        resizedBitmap = Bitmap.createScaledBitmap(bmp, 720, 433, false);
     }
 
     @Override
@@ -49,7 +53,8 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
         // Draw the circle.
         paint.setColor(Color.DKGRAY);
-        paint.setStrokeWidth(12);
+        paint.setStrokeWidth(10);
+        canvas.drawBitmap(resizedBitmap, 0, 0, null);
         canvas.drawLine(700, 120, circleX, circleY, paint);
        // canvas.drawCircle(circleX, circleY, 100, paint);
 
