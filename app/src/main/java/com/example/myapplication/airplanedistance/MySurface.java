@@ -50,9 +50,9 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         surfaceHolder = getHolder();
         Canvas canvas = surfaceHolder.lockCanvas();
         Paint surfaceBackground = new Paint();
-        // Set the surfaceview background color.
+        // Set the surfaceview background color
         surfaceBackground.setColor(Color.WHITE);
-        // Draw the surfaceview background color.
+        // Draw the surfaceview background color
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
 
         // Draw the circle.
@@ -60,9 +60,6 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap, 0, 0, null);
         canvas.drawLine(650, 110, circleX, circleY, paint);
-       // canvas.drawCircle(circleX, circleY, 100, paint);
-
-        //canvas.drawCircle(50, 50, 200, paint);
 
         // Unlock the canvas object and post the new draw.
         surfaceHolder.unlockCanvasAndPost(canvas);
@@ -80,7 +77,12 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
 
         // Draw the rectangle.
-        canvas.drawRect(circleX, circleY, circleX + 200, circleY + 200, paint);
+        // Draw the circle.
+        paint.setColor(Color.DKGRAY);
+        paint.setStrokeWidth(4);
+        canvas.drawBitmap(resizedBitmap1, 0, 0, null);
+        canvas.drawLine(600, 420, circleX, circleY, paint);
+        //canvas.drawRect(circleX, circleY, circleX + 200, circleY + 200, paint);
 
         surfaceHolder.unlockCanvasAndPost(canvas);
     }
