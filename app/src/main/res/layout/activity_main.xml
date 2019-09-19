@@ -28,8 +28,11 @@
                 android:id="@+id/textView2"
                 android:layout_width="295dp"
                 android:layout_height="wrap_content"
+                android:gravity="center"
                 android:layout_weight="1"
-                android:text="Select a button and tap on the black screen to draw a line from the starting location to your destination! " />
+                android:textColor="#43bdee"
+                android:textStyle="bold"
+                android:text="Select a button and tap the black screen to draw a line on the map from the starting location to your destination!" />
         </LinearLayout>
 
         <LinearLayout

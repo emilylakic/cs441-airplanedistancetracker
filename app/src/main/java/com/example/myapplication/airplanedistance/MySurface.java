@@ -57,7 +57,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
         // Draw the circle.
         paint.setColor(Color.DKGRAY);
-        paint.setStrokeWidth(7);
+        paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap, 0, 0, null);
         canvas.drawLine(650, 110, circleX, circleY, paint);
        // canvas.drawCircle(circleX, circleY, 100, paint);
