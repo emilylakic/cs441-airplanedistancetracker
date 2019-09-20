@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     private LinearLayout canvasLayout = null;
     MySurface customSurfaceView = null;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +37,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             @Override
             public void onClick(View view) {
                 drawLine = true;
-
             }
         });
         flButton.setOnClickListener(new View.OnClickListener() {
@@ -80,8 +78,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             customSurfaceView.setCircleY(y);
 
             //Distance for NY to CA
-            if(x<500 && y<320) {
-                ((TextView) findViewById(R.id.textview1)).setText("Distance: California");
+            if(((x>=200) && (x<=220)) && ((y>=10) || (y<=20))) {
+                ((TextView) findViewById(R.id.textview1)).setText("6h");
             }
             //Distance for FL to NY
             if(((x>=620) && (x<=650)) && ((y>=90) || (y<=95))) {
@@ -93,14 +91,12 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 Paint paint = new Paint();
                 paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
-
                 customSurfaceView.drawLine();
             } else {
                 // Create and set a green paint to custom surfaceview.
                 Paint paint = new Paint();
                 paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
-
                 customSurfaceView.drawRect();
             }
 

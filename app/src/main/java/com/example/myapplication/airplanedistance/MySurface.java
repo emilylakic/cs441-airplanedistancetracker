@@ -62,7 +62,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap, 0, 0, null);
-        canvas.drawLine(650, 110, circleX, circleY, paint);
+        canvas.drawLine(70, 240, circleX, circleY, paint);
 
         // Unlock the canvas object and post the new draw.
         surfaceHolder.unlockCanvasAndPost(canvas);
