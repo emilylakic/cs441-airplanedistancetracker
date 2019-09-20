@@ -8,6 +8,8 @@ import android.graphics.Color;
 import android.graphics.Paint;
 import android.view.SurfaceHolder;
 import android.view.SurfaceView;
+import android.widget.EditText;
+import android.widget.TextView;
 
 public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
@@ -19,6 +21,9 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
     private Bitmap nytofl;
     private Bitmap resizedBitmap;
     private Bitmap resizedBitmap1;
+    private int thisX = 600;
+    private int thisY = 420;
+
 
     public MySurface(Context context) {
         super(context);
@@ -78,12 +83,15 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
 
         // Draw the rectangle.
         // Draw the circle.
+        /*if(thisX<600 && thisY<420) {
+            ((TextView) findViewById(R.id.textview1)).setText("New Text");
+        }*/
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap1, 0, 0, null);
-        canvas.drawLine(600, 420, circleX, circleY, paint);
+        canvas.drawLine(thisX, thisY, circleX, circleY, paint);
         //canvas.drawRect(circleX, circleY, circleX + 200, circleY + 200, paint);
-
+        //if line reaches point x y then print out text of distance traveled!
         surfaceHolder.unlockCanvasAndPost(canvas);
     }
 

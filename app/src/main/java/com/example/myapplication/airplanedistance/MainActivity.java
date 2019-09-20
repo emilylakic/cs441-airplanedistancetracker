@@ -14,6 +14,7 @@ import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity implements View.OnTouchListener {
 
@@ -78,6 +79,15 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             customSurfaceView.setCircleX(x);
 
             customSurfaceView.setCircleY(y);
+
+            //Distance for NY to CA
+            if(x<500 && y<320) {
+                ((TextView) findViewById(R.id.textview1)).setText("Distance: ");
+            }
+            //Distance for FL to NY
+            if(x<300 && y<120) {
+                ((TextView) findViewById(R.id.textview1)).setText("Distance: ");
+            }
 
             if (drawLine) {
                 // Create and set a red paint to custom surfaceview.
