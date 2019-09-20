@@ -75,7 +75,6 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             float y = motionEvent.getY();
 
-
             customSurfaceView.setCircleX(x);
 
             customSurfaceView.setCircleY(y);
@@ -85,8 +84,8 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
                 ((TextView) findViewById(R.id.textview1)).setText("Distance: California");
             }
             //Distance for FL to NY
-            if(x<300 && y<120) {
-                ((TextView) findViewById(R.id.textview1)).setText("Distance: Florida");
+            if(((x>=620) && (x<=650)) && ((y>=90) || (y<=95))) {
+                ((TextView) findViewById(R.id.textview1)).setText("2h 42m");
             }
 
             if (drawLine) {

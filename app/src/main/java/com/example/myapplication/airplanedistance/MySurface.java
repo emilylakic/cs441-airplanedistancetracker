@@ -21,8 +21,6 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
     private Bitmap nytofl;
     private Bitmap resizedBitmap;
     private Bitmap resizedBitmap1;
-    private int thisX = 600;
-    private int thisY = 420;
 
 
     public MySurface(Context context) {
@@ -89,7 +87,7 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap1, 0, 0, null);
-        canvas.drawLine(thisX, thisY, circleX, circleY, paint);
+        canvas.drawLine(600, 420, circleX, circleY, paint);
         //canvas.drawRect(circleX, circleY, circleX + 200, circleY + 200, paint);
         //if line reaches point x y then print out text of distance traveled!
         surfaceHolder.unlockCanvasAndPost(canvas);
