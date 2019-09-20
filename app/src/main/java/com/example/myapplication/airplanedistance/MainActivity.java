@@ -82,11 +82,11 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             //Distance for NY to CA
             if(x<500 && y<320) {
-                ((TextView) findViewById(R.id.textview1)).setText("Distance: ");
+                ((TextView) findViewById(R.id.textview1)).setText("Distance: California");
             }
             //Distance for FL to NY
             if(x<300 && y<120) {
-                ((TextView) findViewById(R.id.textview1)).setText("Distance: ");
+                ((TextView) findViewById(R.id.textview1)).setText("Distance: Florida");
             }
 
             if (drawLine) {
