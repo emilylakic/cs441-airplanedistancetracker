@@ -78,11 +78,11 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             customSurfaceView.setCircleY(y);
 
-            //Distance for CA to MT
-            if(((x>=200) && (x<=220)) && ((y>=10) || (y<=20))) {
-                ((TextView) findViewById(R.id.textview1)).setText("6h");
+            //Distance from CA to MT
+            if(((x>=120) && (x<=250)) && ((y>=90) || (y<=95))) {
+                ((TextView) findViewById(R.id.textview1)).setText("2h 18m");
             }
-            //Distance for FL to NY
+            //Distance from FL to NY
             if(((x>=620) && (x<=650)) && ((y>=90) || (y<=95))) {
                 ((TextView) findViewById(R.id.textview1)).setText("2h 42m");
             }
