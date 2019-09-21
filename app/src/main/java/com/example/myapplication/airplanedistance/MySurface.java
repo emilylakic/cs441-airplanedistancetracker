@@ -28,8 +28,8 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         surfaceHolder = getHolder();
         paint = new Paint();
         paint.setColor(Color.RED);
-        nytola = BitmapFactory.decodeResource(getResources(), R.drawable.losangeles);
-        nytofl = BitmapFactory.decodeResource(getResources(), R.drawable.florida);
+        nytola = BitmapFactory.decodeResource(getResources(), R.drawable.montana);
+        nytofl = BitmapFactory.decodeResource(getResources(), R.drawable.newyork);
         resizedBitmap = Bitmap.createScaledBitmap(nytola, 762, 459, false);
         resizedBitmap1 = Bitmap.createScaledBitmap(nytofl, 762, 459, false);
     }

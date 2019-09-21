@@ -65,6 +65,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
+        ((TextView) findViewById(R.id.textview1)).setText("");
         // If user touch the custom SurfaceView object.
         if(view instanceof SurfaceView) {
             view.invalidate();
@@ -77,7 +78,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             customSurfaceView.setCircleY(y);
 
-            //Distance for NY to CA
+            //Distance for CA to MT
             if(((x>=200) && (x<=220)) && ((y>=10) || (y<=20))) {
                 ((TextView) findViewById(R.id.textview1)).setText("6h");
             }
