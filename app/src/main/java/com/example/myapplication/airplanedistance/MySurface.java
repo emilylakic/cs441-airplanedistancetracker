@@ -78,12 +78,6 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         surfaceBackground.setColor(Color.WHITE);
         // Draw the surfaceview background color.
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
-
-        // Draw the rectangle.
-        // Draw the circle.
-        /*if(thisX<600 && thisY<420) {
-            ((TextView) findViewById(R.id.textview1)).setText("New Text");
-        }*/
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap1, 0, 0, null);
