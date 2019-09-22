@@ -53,18 +53,14 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         surfaceHolder = getHolder();
         Canvas canvas = surfaceHolder.lockCanvas();
         Paint surfaceBackground = new Paint();
-        // Set the surfaceview background color
         surfaceBackground.setColor(Color.WHITE);
-        // Draw the surfaceview background color
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
 
-        // Draw the circle.
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap, 0, 0, null);
         canvas.drawLine(70, 240, circleX, circleY, paint);
 
-        // Unlock the canvas object and post the new draw.
         surfaceHolder.unlockCanvasAndPost(canvas);
     }
 
@@ -74,16 +70,12 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         Canvas canvas = surfaceHolder.lockCanvas();
 
         Paint surfaceBackground = new Paint();
-        // Set the surfaceview background color.
         surfaceBackground.setColor(Color.WHITE);
-        // Draw the surfaceview background color.
         canvas.drawRect(0, 0, this.getWidth(), this.getHeight(), surfaceBackground);
         paint.setColor(Color.DKGRAY);
         paint.setStrokeWidth(4);
         canvas.drawBitmap(resizedBitmap1, 0, 0, null);
         canvas.drawLine(600, 420, circleX, circleY, paint);
-        //canvas.drawRect(circleX, circleY, circleX + 200, circleY + 200, paint);
-        //if line reaches point x y then print out text of distance traveled!
         surfaceHolder.unlockCanvasAndPost(canvas);
     }
 
@@ -111,4 +103,3 @@ public class MySurface extends SurfaceView implements SurfaceHolder.Callback {
         this.paint = paint;
     }
 }
-

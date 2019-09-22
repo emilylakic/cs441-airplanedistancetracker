@@ -1,3 +1,208 @@
+commit 040c4fcb6008cf3310b2c4b102864d33cfa2fc7d
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sat Sep 21 22:07:49 2019 -0400
+
+    Got pinch in zoom feature to work
+
+ .../java/com/example/myapplication/airplanedistance/MySurface.java  | 6 ------
+ 1 file changed, 6 deletions(-)
+
+commit ba337d8c1622264c497ee0d13ae1a1bbb5ff3c53
+Merge: c8be880 6c38149
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sat Sep 21 22:06:32 2019 -0400
+
+    Merge remote-tracking branch 'github/master'
+
+commit c8be8801b9d925ca67968d33ee008de624c05dd0
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sat Sep 21 22:06:23 2019 -0400
+
+    Got pinch in zoom feature to work
+
+ .../airplanedistance/MainActivity.java              |  19 +++++++++++++++++++
+ app/src/main/res/drawable-v24/instruction.png       | Bin 15494 -> 14144 bytes
+ app/src/main/res/layout/activity_main.xml           |   4 ++--
+ app/src/main/res/values/colors.xml                  |   2 +-
+ 4 files changed, 22 insertions(+), 3 deletions(-)
+
+commit 6c38149166108584e7a3c4f704aaeac3a4479a8c
+Author: Emily Lakic <elakic1@binghamton.edu>
+Date:   Sat Sep 21 22:06:08 2019 -0400
+
+    Uploading images to use for README
+
+ CAtoMT1.png      | Bin 0 -> 112515 bytes
+ FLtoNY1.png      | Bin 0 -> 111786 bytes
+ SurfaceView1.png | Bin 0 -> 50971 bytes
+ ZoomIn1.png      | Bin 0 -> 126996 bytes
+ 4 files changed, 0 insertions(+), 0 deletions(-)
+
+commit 41f9a98f9823e79e05ca9c82b64cc4613e3d3de7
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sat Sep 21 14:50:05 2019 -0400
+
+    Updates to coordinates
+
+ .../myapplication/airplanedistance/MainActivity.java |   8 ++++----
+ app/src/main/res/drawable-v24/instruction.png        | Bin 9367 -> 15494 bytes
+ app/src/main/res/layout/activity_main.xml            |   2 ++
+ 3 files changed, 6 insertions(+), 4 deletions(-)
+
+commit 4df7ac9309d749faf1e66ce615a81d87719bfcad
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Sat Sep 21 13:55:23 2019 -0400
+
+    Figured out how to clear out text after distance is found and new button + screen is clicked
+
+ .../airplanedistance/MainActivity.java             |   3 +-
+ .../myapplication/airplanedistance/MySurface.java  |   4 +-
+ app/src/main/res/drawable-v24/flightduration.png   | Bin 0 -> 5427 bytes
+ app/src/main/res/drawable-v24/instruction.png      | Bin 0 -> 9367 bytes
+ app/src/main/res/drawable-v24/montana.png          | Bin 0 -> 723657 bytes
+ app/src/main/res/drawable-v24/newyork.png          | Bin 0 -> 721535 bytes
+ app/src/main/res/layout/activity_main.xml          |  49 +++++++++------------
+ 7 files changed, 24 insertions(+), 32 deletions(-)
+
+commit 0a1805cd23a8a66091fb9926f62bec50d09f65ec
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Fri Sep 20 11:47:42 2019 -0400
+
+    Decided to do California to Montana to switch it up from New York!
+
+ .../example/myapplication/airplanedistance/MainActivity.java  |  8 ++------
+ .../com/example/myapplication/airplanedistance/MySurface.java |  2 +-
+ app/src/main/res/layout/activity_main.xml                     | 11 +++++++----
+ 3 files changed, 10 insertions(+), 11 deletions(-)
+
+commit a9217b60ff38c1c05e95991609bb40a652677184
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Fri Sep 20 10:30:14 2019 -0400
+
+    Figured out Florida to New York distance boundaries!
+
+ .../airplanedistance/MainActivity.java             |  5 ++--
+ .../myapplication/airplanedistance/MySurface.java  |  4 +--
+ app/src/main/res/layout/activity_main.xml          | 32 ++++++++++++++++++----
+ app/src/main/res/values/colors.xml                 |  2 ++
+ 4 files changed, 32 insertions(+), 11 deletions(-)
+
+commit bf20cb497875d739df8868ef04e201ba0d2ee23c
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Fri Sep 20 07:51:33 2019 -0400
+
+    Cities added for distance
+
+ .../java/com/example/myapplication/airplanedistance/MainActivity.java | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+
+commit 8fb158975bb637535baec4d60e0a4601e712aa98
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 20:10:47 2019 -0400
+
+    Added option of telling user what the distance between cities is when clicked in the right position on the map, still need to figure out those positions, but wrote out code for it
+
+ .../myapplication/airplanedistance/MainActivity.java    | 10 ++++++++++
+ .../myapplication/airplanedistance/MySurface.java       | 12 ++++++++++--
+ app/src/main/res/layout/activity_main.xml               | 17 +++++++++++++++--
+ 3 files changed, 35 insertions(+), 4 deletions(-)
+
+commit 52a273fe4911a1ad2e37efd84e736e8c7a61bf54
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 17:40:04 2019 -0400
+
+    Finished customization
+
+ .../myapplication/airplanedistance/MySurface.java  |  14 +++++----
+ app/src/main/res/drawable/instructions.png         | Bin 0 -> 12955 bytes
+ app/src/main/res/layout/activity_main.xml          |  33 +++++++++++++--------
+ app/src/main/res/values/colors.xml                 |   1 +
+ 4 files changed, 29 insertions(+), 19 deletions(-)
+
+commit 54c985836f3d45e7e1ae18ad7c9ee6980c5666c6
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 16:57:50 2019 -0400
+
+    Updates
+
+ .../java/com/example/myapplication/airplanedistance/MySurface.java   | 2 +-
+ app/src/main/res/layout/activity_main.xml                            | 5 ++++-
+ 2 files changed, 5 insertions(+), 2 deletions(-)
+
+commit 6eba44ec4866ebe0e3db411ca86e01045d480cc6
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 16:48:31 2019 -0400
+
+    Fixed mapping width/length, coloring
+
+ .../myapplication/airplanedistance/MySurface.java  |  14 +++++++++-----
+ app/src/main/res/drawable/florida.png              | Bin 0 -> 685282 bytes
+ app/src/main/res/drawable/losangeles.png           | Bin 0 -> 652929 bytes
+ app/src/main/res/drawable/newyorkflorida.png       | Bin 0 -> 798234 bytes
+ app/src/main/res/drawable/newyorktocali.png        | Bin 0 -> 760890 bytes
+ app/src/main/res/drawable/newyorktoflorida.png     | Bin 0 -> 776372 bytes
+ app/src/main/res/drawable/nytofl.png               | Bin 861065 -> 0 bytes
+ app/src/main/res/layout/activity_main.xml          |  21 +++++++++++++++++----
+ 8 files changed, 26 insertions(+), 9 deletions(-)
+
+commit 371cda8a9ac4ef984773881fe2a202818a2428b3
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 15:48:22 2019 -0400
+
+    Added image to SurfaceView using bitmap, working on fixing the width/length to fit screen
+
+ .../myapplication/airplanedistance/MySurface.java      |   7 ++++++-
+ app/src/main/res/drawable/nytola.png                   | Bin 861375 -> 0 bytes
+ 2 files changed, 6 insertions(+), 1 deletion(-)
+
+commit 0adb116da23eb3f8c8e74e069b553e0b0e93e189
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Thu Sep 19 14:30:11 2019 -0400
+
+    Customizing line on SurfaceView
+
+ .../java/com/example/myapplication/airplanedistance/MySurface.java   | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+
+commit dd90492787844ae4630a7bad2795c2a702aa7968
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Wed Sep 18 21:34:10 2019 -0400
+
+    Able to draw a line!
+
+ .../java/com/example/myapplication/airplanedistance/MySurface.java | 7 ++++---
+ 1 file changed, 4 insertions(+), 3 deletions(-)
+
+commit 02604d860a359e7a178e3d95193b5cce286bb2f3
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Wed Sep 18 11:48:46 2019 -0400
+
+    Fix comment
+
+ .../main/java/com/example/myapplication/airplanedistance/MySurface.java  | 1 -
+ 1 file changed, 1 deletion(-)
+
+commit 6142c6f947d2a2314283f03eec380bde93af749b
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Wed Sep 18 11:48:09 2019 -0400
+
+    Rebuild
+
+ app/src/main/res/drawable/fdc.png | Bin 0 -> 413448 bytes
+ log.txt                           | 188 ++++++++++++++++++++++++++++++++++++++
+ 2 files changed, 188 insertions(+)
+
+commit fad3015389ef0413702558b56197e987b6086878
+Author: emilylakic <emilylakic@gmail.com>
+Date:   Wed Sep 18 11:47:21 2019 -0400
+
+    Rebuild SurfaceView to be able to draw line
+
+ .../com/example/myapplication/airplanedistance/MainActivity.java | 6 +++---
+ .../com/example/myapplication/airplanedistance/MySurface.java    | 8 +++++---
+ app/src/main/res/layout/activity_main.xml                        | 9 +--------
+ 3 files changed, 9 insertions(+), 14 deletions(-)
+
 commit f88f13e43d5d2ad5c2e2fd443b8660c280ef4b60
 Author: emilylakic <emilylakic@gmail.com>
 Date:   Wed Sep 18 10:03:10 2019 -0400

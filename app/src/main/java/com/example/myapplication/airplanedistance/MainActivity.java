@@ -79,13 +79,11 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
         }
     }
 
-    /* If user finger touch the surfaceview object. */
     @Override
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
         ((TextView) findViewById(R.id.textview1)).setText("");
         mScaleGestureDetector.onTouchEvent(motionEvent);
-        // If user touch the custom SurfaceView object.
         if(view instanceof SurfaceView) {
             view.invalidate();
 
@@ -107,24 +105,19 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
             }
 
             if (drawLine) {
-                // Create and set a red paint to custom surfaceview.
                 Paint paint = new Paint();
                 paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
                 customSurfaceView.drawLine();
             } else {
-                // Create and set a green paint to custom surfaceview.
                 Paint paint = new Paint();
                 paint.setColor(Color.BLUE);
                 customSurfaceView.setPaint(paint);
                 customSurfaceView.drawRect();
             }
-
-            // Tell android os the onTouch event has been processed.
             return true;
         }else
         {
-            // Tell android os the onTouch event has not been processed.
             return false;
         }
     }
