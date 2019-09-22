@@ -7,6 +7,7 @@ import android.graphics.Paint;
 import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
+import android.view.ScaleGestureDetector;
 import android.view.SurfaceHolder;
 import android.view.View;
 import android.view.SurfaceView;
@@ -23,6 +24,9 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     private boolean drawLine = true;
     private LinearLayout canvasLayout = null;
     MySurface customSurfaceView = null;
+    private ScaleGestureDetector mScaleGestureDetector;
+    private float mScaleFactor = 1.0f;
+    private ImageView mImageView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,6 +50,20 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
 
             }
         });
+        mImageView=(ImageView)findViewById(R.id.imageView4);
+        mScaleGestureDetector = new ScaleGestureDetector(this, new ScaleListener());
+    }
+
+    private class ScaleListener extends ScaleGestureDetector.SimpleOnScaleGestureListener {
+        @Override
+        public boolean onScale(ScaleGestureDetector scaleGestureDetector){
+            mScaleFactor *= scaleGestureDetector.getScaleFactor();
+            mScaleFactor = Math.max(0.1f,
+                    Math.min(mScaleFactor, 10.0f));
+            mImageView.setScaleX(mScaleFactor);
+            mImageView.setScaleY(mScaleFactor);
+            return true;
+        }
     }
 
     private void initControls() {
@@ -66,6 +84,7 @@ public class MainActivity extends AppCompatActivity implements View.OnTouchListe
     public boolean onTouch(View view, MotionEvent motionEvent) {
 
         ((TextView) findViewById(R.id.textview1)).setText("");
+        mScaleGestureDetector.onTouchEvent(motionEvent);
         // If user touch the custom SurfaceView object.
         if(view instanceof SurfaceView) {
             view.invalidate();

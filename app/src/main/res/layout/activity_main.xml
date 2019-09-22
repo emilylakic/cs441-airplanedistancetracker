@@ -88,14 +88,14 @@
 
             <ImageView
                 android:id="@+id/imageView2"
-                android:layout_width="99dp"
+                android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
                 app:srcCompat="@drawable/flightduration" />
 
             <TextView
                 android:id="@+id/textview1"
-                android:layout_width="80dp"
+                android:layout_width="112dp"
                 android:layout_height="wrap_content"
                 android:ems="10"
                 android:textColor="@color/darkblue"
