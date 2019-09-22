@@ -1,6 +1,6 @@
 # CS441 FLIGHT DISTANCE CALCULATOR ANDROID APP
 
-## What It Does
+## Functionality
 
 Implements a custom graphing widget on SurfaceView that allows the user to draw a line from a starting point to a destination, emulating the flight path of an airplane. Once the user reaches the destination with their drawn line, the estimated flight duration will appear as a time in the format 'Xh YYm'. Two buttons are provided to allow the user to choose their respective starting point and destination, in this app being 'California to Montana' and 'Florida to New York'.
 
@@ -21,5 +21,4 @@ This app contains:
 ![FloridatoNewYork](/FLtoNY1)
 ![ZoomInFeature](/ZoomIn1)
 
-## Functionality
 
