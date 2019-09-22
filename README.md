@@ -16,9 +16,9 @@ This app contains:
 
 ## Preview
 
-![SurfaceView](1.png)
+![SurfaceView](3.png)
 ![CaliforniatoMontana](2.png)
-![FloridatoNewYork](3.png)
+![FloridatoNewYork](1.png)
 ![ZoomInFeature](4.png)
 
 
