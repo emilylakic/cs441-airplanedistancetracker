@@ -17,7 +17,7 @@ This app contains:
 ## Preview
 
 ![SurfaceView](/SurfaceView1)
-![CaliforniatoMontana](/CAtoMT1)
+![CaliforniatoMontana](/https://github.com/emilylakic/cs441-airplanedistancetracker/blob/master/CAtoMT1.png)
 ![FloridatoNewYork](/FLtoNY1)
 ![ZoomInFeature](/ZoomIn1)
 
